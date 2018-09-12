@@ -1,0 +1,13 @@
+<h1>Word guesser:</h1>
+
+<form>
+  <input type="text" #inputWord>
+  <button type="submit" (click)="checkWord(inputWord.value)">Submit</button>
+</form>
+
+<table>
+  <ng-container>
+    <th>Content</th>
+    <td *ngFor="let word of words">{{word.content}}</td>
+  </ng-container>
+</table>
